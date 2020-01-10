@@ -1,9 +1,9 @@
 # ARMv7.RegisterContentsDecimal
 ARMv7 assembly that outputs the contents of a register in decimal 
-# Language information 
+## Language information 
 This program has been written in ARMv7 assembly language as on the Raspberry Pi. These can be purchased online for around £10-30. The starter set can be purchased for approximately £50.
-# How to run
-## Method 1 
+## How to run
+### Method 1 
 1. Download or clone this GitHub repository 
 2. (If downloaded) Extract the zip archive
 3. Compile the .s file
@@ -27,7 +27,7 @@ ld –o model model.o myotherfile.o
 ```
 echo $?
 ```
-## Method 2
+### Method 2
 1. Download or clone this GitHub repository 
 2. (If downloaded) Extract the zip archive
 3. Run the program 
@@ -38,7 +38,7 @@ echo $?
 ```
 echo $?
 ```
-# Debug the program 
+## Debug the program 
 1. Compile the .s file 
 ```
 as –g –o model.o model.s
@@ -51,9 +51,9 @@ ld –o model model.o
 ```
 gdb model
 ```
-## Noteworthy commands
+### Noteworthy commands
 - List the next 10 lines: l
-- Set breakpoint: b [line number]
+- Set breakpoint: b \[line number\]
 - Run the program: r
 - Continue to the next breakpoint: c
 - Output register values: i r
